@@ -7,10 +7,10 @@
             			 max=a;
 
 **Flowchart Program**
-![Flowchart](https://raw.githubusercontent.com/olismajid/praktikum4/master/Flowchart1.jpg)
+![Flowchart](https://github.com/Aryk3814/praktikum4/blob/master/Flowchart1.jpg)
 
 **Screenshoot**
-![Screenshoot](https://raw.githubusercontent.com/olismajid/praktikum4/master/screnshoot1.png)
+![Screenshoot](https://github.com/Aryk3814/praktikum4/blob/master/screnshot1.png)
 
 **code program lengkap**
 '''c++
@@ -39,10 +39,10 @@ int main()
 3. Membandingkan nilai variable  harga=0,harga_barang=0,total=0,bayar=0,diskon;
 
 **Flowchart Program**
-![Flowchart](https://raw.githubusercontent.com/olismajid/praktikum4/master/flowchart2.jpg)
+![Flowchart](https://github.com/Aryk3814/praktikum4/blob/master/flowchart2.jpg)
 
 **Screenshoot**
-![Screenshoot](https://raw.githubusercontent.com/olismajid/praktikum4/master/screnshoot2.png)
+![Screenshoot](https://github.com/Aryk3814/praktikum4/blob/master/screnshot2.png)
 
 **code program lengkap**
 '''c++
@@ -57,6 +57,37 @@ int main ()
      harga=0,harga_barang=0,total=0,bayar=0,diskon;
      cout<< "Masukan Jumlah Barang (N) : "; cin>>y;
      x=1;
+
+     while(x<=y)
+     {
+         cout<< "Barang Ke-"; cin>>a;
+         cout<< "Masukan Banyaknya Barang: "; cin>>jumlah_beli;
+         cout<< "Masukan Harga Barang:Rp"; cin>>harga;
+         harga_barang = harga*jumlah_beli;
+         total=total + harga_barang;
+         total_beli += jumlah_beli;
+         x++;
+    }
+    if(total>=1000000)
+    {
+
+        diskon=total*10/100;
+    }
+    else if (total>500000&&total<1000000)
+    {
+
+        diskon=total*5/100;
+    }else{
+    diskon=0;
+    }
+    cout<< "=====================================================" <<endl;
+    bayar=total-diskon;
+    cout<< "Total Barang Yang Di beli: "<<total_beli<<endl;
+    cout<< "Total Semua Pembelian :Rp"<<total<<endl;
+    cout<< "Mendapatkan Diskon Sebesar :Rp"<<diskon<<endl;
+    cout<< "Total Yang Harus Di bayar =Rp"<<bayar<<endl;
+}
+
 
      while(x<=y)
      {
